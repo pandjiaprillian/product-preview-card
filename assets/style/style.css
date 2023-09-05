@@ -99,12 +99,50 @@ body {
 
     .product-image {
         width: auto;
-        height: 400px;
+        height: 20rem;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
     }
 
     .product-description {
         padding: 2.8rem;
+    }
+
+    .product-description h3 {
+        font-size: 1.8rem;
+        font-weight: lighter;
+        letter-spacing: 1rem;
+        margin-bottom: 1.3rem;
+    }
+    
+    .product-description h4 {
+        font-size: 2.7rem;
+        font-weight: 800;
+        line-height: 2.5rem;
+        margin-bottom: 1.3rem;
+    }
+    
+    .product-description p {
+        font-size: 1.4rem;
+        color: #bdbab9;
+        margin-bottom: 0.6rem;
+    }
+    
+    .product-description .price-box {
+        color: #3C8368;
+        display: flex;
+        align-items: center;
+        gap: 1.8rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .product-description .price-box .price {
+        font-size: 2.6rem;
+        font-weight: bold;
+    }
+    
+    .product-description .price-box .discount {
+        color: #bdbab9;
+        text-decoration: line-through;
     }
 }
