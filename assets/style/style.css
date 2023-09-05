@@ -23,7 +23,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     object-fit: cover;
-    width: 28.125rem;
 }
 
 .product-description {
@@ -93,12 +92,9 @@ body {
 
 @media (max-width: 500px) {
     .container {
-        width: 600px;
-        margin: 2rem;
-        box-sizing: border-box;
+        width: 90%;
         grid-template-columns: 2fr;
-        border-bottom-left-radius: 1rem;
-        border-bottom-right-radius: 1rem;
+        border-radius: 1rem;
     }
 
     .product-image {
@@ -106,5 +102,9 @@ body {
         height: 400px;
         border-top-left-radius: 1rem;
         border-top-right-radius: 1rem;
+    }
+
+    .product-description {
+        padding: 2.8rem;
     }
 }
