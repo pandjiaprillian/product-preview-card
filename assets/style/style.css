@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F3EAE3;
+}
+
+.container {
+    width: 900px;
+    /* height: 140px; */
+    margin: 2rem auto;
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+}
+
+.product-image {
+    background-image: url('../images/image-product-desktop.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    width: 28.125rem;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    padding: 4rem;
+}
+
+.product-description h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+}
+
+.product-description h4 {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 2.8rem;
+    margin-bottom: 3rem;
+}
+
+.product-description p {
+    font-size: 1.6rem;
+    color: #bdbab9;
+    margin-bottom: 1.4rem;
+}
+
+.product-description .price-box {
+    color: #3C8368;
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    margin-bottom: 1.8rem;
+}
+
+.product-description .price-box .price {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.product-description .price-box .discount {
+    color: #bdbab9;
+    text-decoration: line-through;
+}
+
+.product-description .btn-cart {
+    background-color: #3C8368;
+    color: #fff;
+    border: none;
+    padding: 1.4rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.product-description .btn-cart:hover {
+    background-color: #235340;
+    cursor: pointer;
+}
+
+.product-description .btn-cart:focus {
+    background-color: #235340;
+}
+
+@media (max-width: 500px) {
+    .container {
+        width: 600px;
+        margin: 2rem;
+        box-sizing: border-box;
+        grid-template-columns: 2fr;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .product-image {
+        width: auto;
+        height: 400px;
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+}
